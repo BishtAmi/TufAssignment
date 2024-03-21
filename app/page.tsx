@@ -17,7 +17,7 @@ export default function Home() {
     event.preventDefault();
     try {
       console.log(name, lang, code, input);
-      const response = await fetch("http://localhost:3000/api/postCode", {
+      const response = await fetch("/api/postCode", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
