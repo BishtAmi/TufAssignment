@@ -28,7 +28,7 @@ export default function Home() {
 
   const fetchData = async () => {
     try {
-      const response = await fetch("http://localhost:3000/api/postCode");
+      const response = await fetch("/api/postCode");
       if (!response.ok) {
         throw new Error("Failed to fetch data");
       }
